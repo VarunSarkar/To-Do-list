@@ -1,0 +1,1 @@
+A responsive ticket style To-Do list where you can generate task tickets with different priority based on colours with lock-unlock editing. Local storage is also implemented to store the data on browser.
