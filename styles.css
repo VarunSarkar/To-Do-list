@@ -1,0 +1,214 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: #333;
+    height: 5rem;
+    display:flex;
+    align-items: center;
+    padding-left: 3rem;
+
+}
+header>*{
+    height: 80%;
+    background-color:rgb(96, 88, 88);
+    border-radius: 6px;
+    align-items: center;
+}
+
+.color-selector-container{
+    width: 25vw;
+    justify-content: space-evenly;
+    display: flex;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.color{
+   height: 100%;
+   width: 25%;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.color>*{
+    height: 50%;
+    width: 50%;
+    border-radius: 4px;
+}
+
+.selector:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+
+.pink{
+    background-color:lightpink;
+ }
+ .blue{
+    background-color:lightblue; 
+ }
+ .green{
+    background-color:lightgreen;
+ }
+ .black{
+    background-color:black;
+ }
+
+ .add-cross-selector-container,.lock-unlock_container{
+    width: 10vw;
+    justify-content: space-evenly;
+    display: flex; 
+    border-radius: 6px;
+    margin-right: 3rem;
+}
+.add, .cross, .lock-container, .unlock-container{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    border-radius: 6px;
+    
+ }
+
+
+ .tool_icons{
+    font-size: 200%;
+    /* boldness */
+    font-weight: 200;
+ }
+ 
+ 
+ .active{
+   background-color: rgba(0, 0, 0, 0.5);
+ }
+ 
+ 
+ 
+ .main-container{
+    height: calc(100vh - 5rem); 
+    background-color: #f2f2f2;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+ }
+
+.modal{
+   height: 20rem;
+   width:  35rem;
+   display: none;
+   position: fixed;
+   box-shadow: 00px 100px 400px 400px grey;;
+   top: calc(50% - 10rem);
+   box-sizing: border-box;
+}
+
+.close{
+   color: darkgrey;
+   font-size: 400%;
+   font-weight: 200;
+   position: absolute;
+   left: 33rem;
+   top: -2rem;
+}
+
+.close:hover{
+   color: black;
+}
+
+
+.modal>*{
+   box-sizing: border-box;
+}
+
+.modal-container{
+   height: 100%;
+   width: 70%;
+   background-color: white;
+   padding: 2rem;
+}
+
+.task_input{
+   margin: 0%;
+   border: none;
+   height: 100%;
+   width: 100%;
+   font-size: 2.5rem;
+   font-family: sans-serif;
+}
+
+
+.modal-selector{
+   height: 100%;
+   width: 30%;
+   background-color: rgb(96, 88, 88);
+   padding: 2rem 1rem;
+}
+
+
+.mColor{
+   height: 25%;
+   width: 100%;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+}
+
+
+.mColor>*{
+   height: 50%;
+   width: 50%;
+   box-sizing: border-box;
+}
+
+
+.selected{
+   border: 0.2rem solid black;
+}
+
+
+ .task_container{
+    background-color: white;
+    height: 8rem;
+    width:13rem;
+    border-radius: 10px;
+ }
+
+
+ .task_main-container{
+    padding:0.5rem;
+    height: 6.5rem;
+ }
+
+
+ .task_main-container>.text{
+   width: 200px;
+   height: 80%;
+   overflow-y: scroll;
+   display: 'block';
+   word-wrap: break-word;
+   resize: vertical;
+   scrollbar-width: none; /*for firefox -> to  hide scroll bar*/
+   -ms-overflow-style: none; /*for IE and Edge -> to  hide scroll bar*/
+}
+.task_main-container>.text::-webkit-scrollbar {
+   display: none; /*For Chrome, safari -> to  hide scroll bar*/
+ }
+
+ .task_header{
+    height:0.5rem;
+ }
+
+ .task_id{
+    color:rgb(150, 144, 144);
+    margin:0.2rem;
+    margin-left:0px;
+ }
